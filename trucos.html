@@ -259,6 +259,13 @@
 .ad-top-small {
   display: block;
 }
+	  /* Estilos comunes para todos los banners */
+.banner-small, .banner-medium, .banner-large {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: none; /* Todos están ocultos por defecto */
+}
 
 /* Mostrar banner grande solo en pantallas mayores a 900px */
 @media (min-width: 901px) {
@@ -269,6 +276,9 @@
     display: none;
   }
 }
+	  .banner-large {
+    display: block;
+  }
 
 /* Mostrar banner mediano solo en pantallas entre 600px y 900px */
 @media (min-width: 601px) and (max-width: 900px) {
@@ -281,6 +291,9 @@
 	  .articles-container a {
         flex: 1 1 100%;
       }
+	 .banner-medium {
+    display: block;
+  }
 }
 
 /* Mostrar banner pequeño solo en pantallas menores a 600px */
@@ -349,7 +362,10 @@
       color: #5c4d44;
       margin-bottom: 0.75rem;
 	    text-align: left;
-    }
+    } 
+   .banner-small {
+    display: block;
+  }
   }
 
   </style>
@@ -435,11 +451,48 @@
 	   <p>Esto te ayudará a organizarte mejor.</p>
         <p>Te permitirá registrarte en más ofertas sin miedo a llenar tu buzón principal.</p>	   
     </div>
+ <!-- Contenedor para dispositivo pequeño -->
+<div class="banner-small">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'd85308c9979c0d7ae90b5b1ed63d7ce9',
+      'format' : 'iframe',
+      'height' : 300,
+      'width' : 160,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/d85308c9979c0d7ae90b5b1ed63d7ce9/invoke.js"></script>
+</div>
 
-    <!-- Banner intermedio -->
-    <div class="ad-middle">
-      Aquí va tu banner o código diferente para poner anuncios o promos
-    </div>
+<!-- Contenedor para dispositivo mediano -->
+<div class="banner-medium">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'f0a27a93c8151cf7bc7819b8e7ac09ed',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/f0a27a93c8151cf7bc7819b8e7ac09ed/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo grande -->
+<div class="banner-large">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '882d20ff198d4555cd79908fcfc07e3c',
+      'format' : 'iframe',
+      'height' : 600,
+      'width' : 160,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/882d20ff198d4555cd79908fcfc07e3c/invoke.js"></script>
+</div>
+
 
     <div class="subtituloo">
 	    <h2>5. Aprovecha las aplicaciones móviles</h2>
@@ -504,6 +557,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
