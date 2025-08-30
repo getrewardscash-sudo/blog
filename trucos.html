@@ -66,19 +66,6 @@
       margin: 0rem auto;
       padding: 0 1rem;
     }
-
-    /* Contenedor del anuncio superior */
-    .ad-top {
-      width: 100%;
-	  height: 60px;
-      background-color: #fff6e5;
-      border: 1px solid #ffd27f;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 0px;
-      border-radius: 5px;
-    }
-
     /* Contenedor del anuncio inferior */
     .ad-bottom {
       width: 100%;
@@ -256,14 +243,63 @@
       border-top: 1px solid #ddd;
     }
 
-    @media (max-width: 700px) {
-      .articles-container a {
+/* Estilos comunes para los banners */
+.ad-top-large, .ad-top-medium, .ad-top-small {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Banner grande: por defecto está oculto */
+.ad-top-large {
+  display: none;
+}
+
+/* Banner mediano: por defecto está oculto */
+.ad-top-medium {
+  display: none;
+}
+
+/* Banner pequeño: por defecto está visible */
+.ad-top-small {
+  display: block;
+}
+
+/* Mostrar banner grande solo en pantallas mayores a 900px */
+@media (min-width: 901px) {
+  .ad-top-large {
+    display: block;
+  }
+  .ad-top-medium, .ad-top-small {
+    display: none;
+  }
+}
+
+/* Mostrar banner mediano solo en pantallas entre 600px y 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .ad-top-medium {
+    display: block;
+  }
+  .ad-top-large, .ad-top-small {
+    display: none;
+	  }
+	  .articles-container a {
         flex: 1 1 100%;
       }
-    }
+}
 
-    @media (max-width: 550px) {
-      body {
+/* Mostrar banner pequeño solo en pantallas menores a 600px */
+@media (max-width: 600px) {
+  .ad-top-small {
+    display: block;
+  }
+  .ad-top-large, .ad-top-medium {
+    display: none;
+  }
+	.articles-container a {
+        flex: 1 1 100%;
+      }
+     body {
      margin: 0;
       background-color: #fc8942;
       color: #333;
@@ -319,16 +355,52 @@
       margin-bottom: 0.75rem;
 	    text-align: left;
     }
+  }
 
-    }
   </style>
 </head>
 <body>
-  <!-- Contenedor para anuncio superior -->
-  <div class="ad-top">
-    <!-- Aquí puedes pegar tu código de anuncio de Adsterra -->
-    <p>Espacio para anuncio superior (Adsterra)</p>
-  </div>
+  <!-- Contenedor para dispositivo grande -->
+<div class="ad-top-large">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'dfc52606c46c1dd04e60339bfb77f420',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/dfc52606c46c1dd04e60339bfb77f420/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo mediano -->
+<div class="ad-top-medium">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'c1825b17bfc9fe03d98edca988d098c0',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/c1825b17bfc9fe03d98edca988d098c0/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo pequeño -->
+<div class="ad-top-small">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '982e02e5427f5f7c076bb103677cfd74',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/982e02e5427f5f7c076bb103677cfd74/invoke.js"></script>
+</div>
 
   <header>
     <h1>blog get rewards cash</h1>
@@ -437,4 +509,5 @@
   </footer>
 </body>
 </html>
+
 
