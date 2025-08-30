@@ -44,19 +44,7 @@
       margin: 0 auto;
       padding: 0 1rem;
     }
-
-    /* Banner superior */
-    .ad-top {
-      width: 100%;
-      height: 60px;
-      background-color: #fff6e5;
-      border: 1px solid #ffd27f;
-      padding: 10px;
-      text-align: center;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-
+    
     header {
       text-align: center;
       margin-bottom: 1rem;
@@ -157,19 +145,110 @@
       border-top: 1px solid #ddd;
       margin-top: 2rem;
     }
+    /* Estilos comunes para los banners */
+.ad-top-large, .ad-top-medium, .ad-top-small {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
 
-    @media (max-width: 700px) {
+/* Banner grande: por defecto está oculto */
+.ad-top-large {
+  display: none;
+}
+
+/* Banner mediano: por defecto está oculto */
+.ad-top-medium {
+  display: none;
+}
+
+/* Banner pequeño: por defecto está visible */
+.ad-top-small {
+  display: block;
+}
+
+/* Mostrar banner grande solo en pantallas mayores a 900px */
+@media (min-width: 751px) {
+  .ad-top-large {
+    display: block;
+  }
+  .ad-top-medium, .ad-top-small {
+    display: none;
+  }
+}
+
+/* Mostrar banner mediano solo en pantallas entre 600px y 900px */
+@media (min-width: 501px) and (max-width: 750px) {
+  .ad-top-medium {
+    display: block;
+  }
+  .ad-top-large, .ad-top-small {
+    display: none;
+  }
+     .articles-container a {
+        flex: 1 1 100%;
+      } 
+}
+
+/* Mostrar banner pequeño solo en pantallas menores a 600px */
+@media (max-width: 500px) {
+  .ad-top-small {
+    display: block;
+  }
+  .ad-top-large, .ad-top-medium {
+    display: none;
+  }
       .articles-container a {
         flex: 1 1 100%;
       }
-    }
+}
+    
   </style>
 </head>
 <body>
-  <!-- Banner superior -->
-  <div class="ad-top">
-    <p>Espacio para anuncio superior (Adsterra)</p>
-  </div>
+<!-- Contenedor para dispositivo grande -->
+<!-- Contenedor para dispositivo grande -->
+<div class="ad-top-large">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'dfc52606c46c1dd04e60339bfb77f420',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/dfc52606c46c1dd04e60339bfb77f420/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo mediano -->
+<div class="ad-top-medium">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'c1825b17bfc9fe03d98edca988d098c0',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/c1825b17bfc9fe03d98edca988d098c0/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo pequeño -->
+<div class="ad-top-small">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '982e02e5427f5f7c076bb103677cfd74',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/982e02e5427f5f7c076bb103677cfd74/invoke.js"></script>
+</div>
+
 
   <!-- Header con título y menú -->
   <header>
@@ -233,5 +312,6 @@
   </footer>
 </body>
 </html>
+
 
 
