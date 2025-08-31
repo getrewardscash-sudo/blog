@@ -41,7 +41,7 @@
       box-sizing: border-box;
     }
 
-    body {
+		   body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fc8942;
       color: #333;
@@ -50,19 +50,6 @@
       margin: 0rem auto;
       padding: 0 1rem;
     }
-
-    /* Contenedor del anuncio superior */
-    .ad-top {
-      width: 100%;
-	  height: 60px;
-      background-color: #fff6e5;
-      border: 1px solid #ffd27f;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 0px;
-      border-radius: 5px;
-    }
-
     /* Contenedor del anuncio inferior */
     .ad-bottom {
       width: 100%;
@@ -77,16 +64,11 @@
 
     /* Nuevo banner intermedio */
     .ad-middle {
-      width: 100%;
-      background-color: #e0ffe0;
-      border: 2px dashed #3cb371;
-      padding: 15px;
-      text-align: center;
-      margin: 2rem 0;
-      border-radius: 8px;
-      font-weight: 600;
-      color: #2e8b57;
-      font-size: 1.1rem;
+        width: 100%;
+	   height: auto; 
+       background: white;
+	   margin-bottom: 15px; 
+      
     }
 
     header {
@@ -240,14 +222,82 @@
       border-top: 1px solid #ddd;
     }
 
-    @media (max-width: 700px) {
-      .articles-container a {
+/* Estilos comunes para los banners */
+.ad-top-large, .ad-top-medium, .ad-top-small {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Banner grande: por defecto está oculto */
+.ad-top-large {
+  display: none;
+}
+
+/* Banner mediano: por defecto está oculto */
+.ad-top-medium {
+  display: none;
+}
+
+/* Banner pequeño: por defecto está visible */
+.ad-top-small {
+  display: block;
+}
+	  /* Estilos comunes para todos los banners */
+.banner-small, .banner-medium, .banner-large {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: none; /* Todos están ocultos por defecto */
+}
+
+/* Mostrar banner grande solo en pantallas mayores a 900px */
+@media (min-width: 901px) {
+  .ad-top-large {
+    display: block;
+	  height: 100%;
+  }
+  .ad-top-medium, .ad-top-small {
+    display: none;
+  }
+}
+	  .banner-large {
+    display: block;
+  }
+
+/* Mostrar banner mediano solo en pantallas entre 600px y 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .ad-top-medium {
+    display: block;
+	  height: auto;
+  }
+  .ad-top-large, .ad-top-small {
+    display: none;
+	  }
+	  .articles-container a {
         flex: 1 1 100%;
       }
-    }
+	 .banner-medium {
+    display: block;
+  }
+	 .banner-large {
+    display: none;
+  }
+}
 
-    @media (max-width: 550px) {
-      body {
+/* Mostrar banner pequeño solo en pantallas menores a 600px */
+@media (max-width: 600px) {
+  .ad-top-small {
+    display: block;
+	  height: auto;
+  }
+  .ad-top-large, .ad-top-medium {
+    display: none;
+  }
+	.articles-container a {
+        flex: 1 1 100%;
+      }
+     body {
      margin: 0;
       background-color: #fc8942;
       color: #333;
@@ -302,17 +352,60 @@
       color: #5c4d44;
       margin-bottom: 0.75rem;
 	    text-align: left;
-    }
+    } 
+   .banner-small {
+    display: block;
+  }
+	.banner-large {
+    display: none;
+  }
+  }
 
-    }
   </style>
 </head>
 <body>
-  <!-- Contenedor para anuncio superior -->
-  <div class="ad-top">
-    <!-- Aquí puedes pegar tu código de anuncio de Adsterra -->
-    <p>Espacio para anuncio superior (Adsterra)</p>
-  </div>
+
+	 <!-- Contenedor para dispositivo grande -->
+<div class="ad-top-large">
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript">
+    atOptions = {
+      'key' : 'dfc52606c46c1dd04e60339bfb77f420',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript" src="//www.highperformanceformat.com/dfc52606c46c1dd04e60339bfb77f420/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo mediano -->
+<div class="ad-top-medium">
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript">
+    atOptions = {
+      'key' : 'c1825b17bfc9fe03d98edca988d098c0',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript" src="//www.highperformanceformat.com/c1825b17bfc9fe03d98edca988d098c0/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo pequeño -->
+<div class="ad-top-small">
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript">
+    atOptions = {
+      'key' : '982e02e5427f5f7c076bb103677cfd74',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript" src="//www.highperformanceformat.com/982e02e5427f5f7c076bb103677cfd74/invoke.js"></script>
+</div>
 
   <header>
     <h1>blog get rewards cash</h1>
@@ -340,9 +433,39 @@
 <p>Las criptomonedas eliminan intermediarios, lo que hace las transacciones más rápidas y globales.</p>
 <p>Cada vez más comercios aceptan cripto como medio de pago, ampliando su utilidad.</p>
 
-<!-- Banner intermedio -->
-<div class="ad-middle">
-  Aquí va tu banner o código diferente para poner anuncios o promos
+ <!-- Contenedor para dispositivo pequeño -->
+<div class="banner-small">
+
+       <script type="28f5838b52fc4d0ee61dadfe-text/javascript">
+    atOptions = {
+      'key' : 'f0a27a93c8151cf7bc7819b8e7ac09ed',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+  </script>
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript" src="//www.highperformanceformat.com/d85308c9979c0d7ae90b5b1ed63d7ce9/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo mediano -->
+<div class="banner-medium">
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript">
+    atOptions = {
+      'key' : 'f0a27a93c8151cf7bc7819b8e7ac09ed',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+  </script>
+  <script type="28f5838b52fc4d0ee61dadfe-text/javascript" src="//www.highperformanceformat.com/f0a27a93c8151cf7bc7819b8e7ac09ed/invoke.js"></script>
+</div>
+
+<!-- Contenedor para dispositivo grande -->
+<div class="banner-large">
+  <script async="async" data-cfasync="false" src="//pl27538926.revenuecpmgate.com/43d9c3e99a8ab79c0cf9854e2a7985b9/invoke.js"></script>
+  <div id="container-43d9c3e99a8ab79c0cf9854e2a7985b9"></div>
 </div>
 
 <div class="subtituloo">
@@ -375,10 +498,10 @@
 </div>
 
 
-  <!-- Contenedor para anuncio inferior -->
-  <div class="ad-bottom">
-    <!-- Aquí puedes pegar tu código de anuncio de Adsterra -->
-    <p>Espacio para anuncio inferior (Adsterra)</p>
+  <!-- Banner intermedio (Adsterra) -->
+  <div class="ad-middle">
+<script async="async" data-cfasync="false" src="//pl27543853.revenuecpmgate.com/366aaff4b4ac1607924ba0f5a8ff328c/invoke.js"></script>
+<div id="container-366aaff4b4ac1607924ba0f5a8ff328c"></div>
   </div>
 
   <!-- Recuadros con artículos debajo del banner inferior -->
@@ -421,4 +544,5 @@
   </footer>
 </body>
 </html>
+
 
