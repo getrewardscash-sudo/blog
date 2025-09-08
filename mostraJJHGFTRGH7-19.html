@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pregunta 19</title>
 	<link rel="icon" href="https://get-rewards-cash.com/favico.ico/favicon.png" type="image/x-icon">
-  <style>
+<style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -45,11 +45,13 @@
   .banner-medio1 {
     width: 90%;
     height: 250px;
+    margin: 0 auto;
   }
 
   .banner-medio2 {
     width: 400px;
     height: 250px;
+    margin: 0 auto;
   }
 
   .banner-inferior {
@@ -145,45 +147,31 @@
   }
 
   @media (min-width: 901px) {
+    /* Solo se muestra el banner-medio1 en pantallas grandes */
+    .banner-medio1 {
+      display: block;
+    }
+
+    /* Oculta el banner-medio2 en pantallas grandes */
     .banner-medio2 {
       display: none;
     }
-
-    .ad-top-large {
-      display: block;
-      height: auto;
-    }
-
-    .ad-top-medium,
-    .ad-top-small {
-      display: none;
-    }
-
-    .banner-large {
-      display: block;
-    }
-  }
-
-  .ad-top-large,
-  .ad-top-medium,
-  .ad-top-small {
-    text-align: center;
-    padding: 10px;
-    background-color: #f0f0f0;
   }
 
   @media (max-width: 900px) {
-    .banner-superior {
-      width: 100%;
-      height: 70px;
-    }
-
+    /* Solo se muestra el banner-medio2 en pantallas medianas y pequeñas */
     .banner-medio2 {
       display: block;
     }
 
+    /* Oculta el banner-medio1 en pantallas medianas y pequeñas */
     .banner-medio1 {
       display: none;
+    }
+
+    .banner-superior {
+      width: 100%;
+      height: 70px;
     }
 
     .container {
@@ -191,28 +179,12 @@
       margin: 0 auto;
       padding-bottom: 100px;
     }
-
-    .banner-medium {
-      display: block;
-    }
-
-    .banner-large {
-      display: none;
-    }
   }
 
   @media (max-width: 600px) {
     .banner-superior {
       width: 100%;
       height: 60px;
-    }
-
-    .banner-medio2 {
-      display: block;
-    }
-
-    .banner-medio1 {
-      display: none;
     }
 
     .container {
@@ -227,6 +199,7 @@
     }
   }
 </style>
+
 </head>
 <body>
   	 <!-- Contenedor para dispositivo grande -->
@@ -351,6 +324,7 @@ Siguiendo estas indicaciones, te aseguras de que tus recompensas sean gestionada
   </script>
 </body>
 </html>
+
 
 
 
