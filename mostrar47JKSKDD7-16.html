@@ -3,226 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pregunta de Geografía</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fc8942;
-      text-align: center;
-    }
-
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding-bottom: 100px;
-    }
-
-    header {
-      padding: 20px 0;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      color: #6b1c33;
-    }
-
-    .subtitulo {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #473b3b;
-	  text-align: left; 
-    }
-
-   
-    .banner-superior {
-      width: 100%;
-      height: 80px;
-    }
-
-    .banner-medio1 {
-      width: 90%;
-      height: 250px;
-    }
-	 .bannero2 {
-      width: 400px;
-      height: 250px;
-    }
-
-    .banner-inferior {
-      width: 100%;
-      height: 90px;
-    }
-
-    .imagen-referencia-container {
-      margin: 20px 0;
-      padding: 20px;
-      background-color: #eb1e66;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .imagen-referencia-container h3 {
-      font-size: 1.5em;
-      color: #fff;
-    }
-
-    .imagen-referencia-container img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
-    /* ✅ NUEVO ESTILO PARA EL SUBTÍTULO FUERA DEL RECUADRO */
-    .subtitulo-imagen {
-      font-size: 1.1em;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      color: #290404;
-    }
-
-    .pregunta {
-      font-size: 1.5em;
-      margin: 20px 0;
-      color: #333;
-    }
-
-    .opciones {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .opciones button {
-      background-color: #c71c4f;
-      color: white;
-      border: none;
-      padding: 15px 32px;
-      font-size: 1.2em;
-      margin: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      width: 100%;
-    }
-
-    .opciones button:hover {
-      background-color: #a2153c;
-    }
-
-    .resultado-msg {
-      margin-top: 20px;
-      font-size: 1.2em;
-    }
-
-    .correcto {
-      color: green;
-    }
-
-    .incorrecto {
-      color: red;
-    }
-
-    .texto-abajo {
-      margin: 30px 0 10px 0;
-      font-size: 1.1em;
-      color: #473b3b;
-    }
-
-    footer {
-      text-align: center;
-      color: #403934;
-      font-size: 0.9rem;
-      padding: 1rem 0;
-      border-top: 1px solid #ddd;
-    }
-	@media (min-width: 901px) {
-    .bannero2 {
-      width: 400px;
-      height: 250px;
-	  display: none;
-    }
-	.ad-top-large {
-    display: block;
-	  height: auto;
+  <title>Pregunta 16</title>
+	<link rel="icon" href="https://get-rewards-cash.com/favico.ico/favicon.png" type="image/x-icon">
+	<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fc8942;
+    text-align: center;
   }
-  .ad-top-medium, .ad-top-small {
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #6b1c33;
+  }
+
+  .subtitulo {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #473b3b;
+    text-align: left;
+  }
+
+  .banner-superior {
+    width: 100%;
+    height: 80px;
+  }
+
+  .banner-medio1 {
+    width: 90%;
+    height: 250px;
+  }
+
+  .banner-medio2 {
+    width: 400px;
+    height: 250px;
+  }
+
+  .banner-inferior {
+    width: 100%;
+    height: 90px;
+  }
+
+  .imagen-referencia-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eb1e66;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .imagen-referencia-container h3 {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  .imagen-referencia-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .subtitulo-imagen {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #290404;
+  }
+
+  .pregunta {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+  }
+
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opciones button {
+    background-color: #c71c4f;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .opciones button:hover {
+    background-color: #a2153c;
+  }
+
+  .resultado-msg {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  .correcto {
+    color: green;
+  }
+
+  .incorrecto {
+    color: red;
+  }
+
+  .texto-abajo {
+    margin: 30px 0 10px 0;
+    font-size: 1.1em;
+    color: #473b3b;
+  }
+
+  footer {
+    text-align: center;
+    color: #403934;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .ocultar {
     display: none;
   }
-}
-	  .banner-large {
-    display: block;
-  }
-/* Estilos comunes para los banners */
-.ad-top-large, .ad-top-medium, .ad-top-small {
-  text-align: center;
-  padding: 10px;
-  background-color: #f0f0f0;
-}
 
-  
-  
-@media (max-width: 900px) {
-     .banner-superior {
+  @media (min-width: 901px) {
+    .banner-medio2 {
+      display: none;
+    }
+
+    .ad-top-large {
+      display: block;
+      height: auto;
+    }
+
+    .ad-top-medium,
+    .ad-top-small {
+      display: none;
+    }
+
+    .banner-large {
+      display: block;
+    }
+  }
+
+  .ad-top-large,
+  .ad-top-medium,
+  .ad-top-small {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  @media (max-width: 900px) {
+    .banner-superior {
       width: 100%;
       height: 70px;
     }
-	banner-medio2 {
-      width: 400px;
-      height: 250px;
-	  display: block;
+
+    .banner-medio2 {
+      display: block;
     }
-	    .banner-medio1 {
-      width: 90%;
-      height: 250px;
-   display: none;
-  }
-	.container {
+
+    .banner-medio1 {
+      display: none;
+    }
+
+    .container {
       width: 90%;
       margin: 0 auto;
       padding-bottom: 100px;
     }
-	  display: none;
-	  }
-	 
-	 .banner-medium {
-    display: block;
-  }
-	 .banner-large {
-    display: none;
-  }
-}
 
-@media (max-width: 600px) {
+    .banner-medium {
+      display: block;
+    }
+
+    .banner-large {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
     .banner-superior {
       width: 100%;
       height: 60px;
     }
-	banner-medio2 {
-      width: 400px;
-      height: 250px;
-	  display: block;
+
+    .banner-medio2 {
+      display: block;
     }
-	  .banner-medio1 {
-      width: 90%;
-      height: 250px;
-	  display: none;
+
+    .banner-medio1 {
+      display: none;
     }
-	
-	.container {
+
+    .container {
       width: 95%;
       margin: 0 auto;
       padding-bottom: 100px;
     }
-	.ad-top-large, .ad-top-medium {
-    display: none;
+
+    .ad-top-large,
+    .ad-top-medium {
+      display: none;
+    }
   }
-}
-	
-  </style>
+</style>
 </head>
 <body>
   	 <!-- Contenedor para dispositivo grande -->
@@ -347,3 +351,4 @@ Combinar encuestas con otras formas de ganar puntos, como el Muro de Oferta y ve
   </script>
 </body>
 </html>
+
